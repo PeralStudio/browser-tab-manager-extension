@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Pestañas</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <h1>🪟 Gestor de Pestañas<i id="open-in-new-window" class="fas fa-external-link-alt"></i></h1>
+        <input type="text" id="search-box" placeholder="Buscar pestañas">
+        <div id="controls">
+            <button id="close-all">Cerrar todas</button>
+            <button id="duplicate-tab">Duplicar pestaña</button>
+        </div>
+        <div id="search-title"></div>
+
+        <ul id="tabs-list"></ul>
+        <hr>
+        <div id="saved-tabs-container">
+            <h2>💾 Pestañas Guardadas</h2>
+            <ul id="saved-tabs-list"></ul>
+        </div>
+        <hr>
+        <div id="closed-tabs">
+            <h2>❌ Pestañas Cerradas Recientemente</h2>
+            <ul id="closed-tabs-list"></ul>
+        </div>
+        <script src="popup.js"></script>
+    </div>
+</body>
+
+</html>

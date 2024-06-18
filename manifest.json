@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Gestor de Pestañas",
+    "version": "1.0",
+    "author": "Alberto Peral",
+    "description": "Una extensión para gestionar pestañas abiertas.",
+    "permissions": [
+        "tabs",
+        "sessions",
+        "storage"
+    ],
+    "icons": {
+        "16": "tabs.png",
+        "48": "tabs.png",
+        "128": "tabs.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "tabs.png"
+        }
+    }
+}
