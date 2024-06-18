@@ -200,6 +200,24 @@ document.addEventListener("DOMContentLoaded", function () {
             li.appendChild(restoreButton);
             closedTabsList.appendChild(li);
         });
+
+        const closeTabsTittle = document.getElementById("closed-tabs-tittle");
+        const restoreAllButton = document.createElement("button");
+        const icon = document.createElement("i");
+        restoreAllButton.textContent = "Restaurar todas ";
+        restoreAllButton.className = "restore-all";
+        icon.className = "fas fa-undo";
+        restoreAllButton.appendChild(icon);
+        restoreAllButton.addEventListener("click", function () {
+            closedTabs.forEach((tab) => {
+                chrome.tabs.create({ url: tab.url });
+            });
+            closedTabs = [];
+            localStorage.setItem("closedTabs", JSON.stringify(closedTabs));
+            updateClosedTabsList();
+        });
+
+        closeTabsTittle.appendChild(restoreAllButton);
     }
 
     function saveClosedTab(tab) {
@@ -209,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tags: []
         });
 
-        savedTabs = savedTabs.slice(0, 3);
+        savedTabs = savedTabs.slice(0, 10);
 
         localStorage.setItem("savedTabs", JSON.stringify(savedTabs));
         updateSavedTabsList();

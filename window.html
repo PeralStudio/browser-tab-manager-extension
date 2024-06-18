@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Gestor de Pestañas</title>
     <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -16,7 +17,6 @@
             <button id="duplicate-tab">Duplicar pestaña</button>
         </div>
         <div id="search-title"></div>
-
         <ul id="tabs-list"></ul>
         <hr>
         <div id="saved-tabs-container">
@@ -25,7 +25,7 @@
         </div>
         <hr>
         <div id="closed-tabs">
-            <h2>❌ Pestañas Cerradas Recientemente</h2>
+            <h2 id="closed-tabs-tittle">❌ Pestañas Cerradas Recientemente</h2>
             <ul id="closed-tabs-list"></ul>
         </div>
         <script src="popup.js"></script>
