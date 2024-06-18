@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("open-in-new-window").addEventListener("click", function () {
         chrome.windows.create({
-            url: "window.html",
+            url: "popup.html",
             type: "popup",
             width: 800,
             height: 700
