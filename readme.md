@@ -25,7 +25,7 @@ Esta es una extensión de Chrome diseñada para gestionar pestañas abiertas y c
 1. Haz clic en el icono de la extensión en la barra de herramientas de Chrome para abrir la interfaz de usuario.
 2. Utiliza la barra de búsqueda para filtrar las pestañas abiertas.
 3. Haz clic en los botones correspondientes para cerrar, guardar, restaurar o actualizar pestañas.
-4. Para restaurar todas las pestañas cerradas recientemente, haz clic en el botón "Restaurar todas" en la sección de pestañas cerradas recientemente.
+4. Para restaurar las pestañas cerradas recientemente, haz clic en el botón "Restaurar" en la sección de pestañas cerradas recientemente.
 
 ## Permisos
 
